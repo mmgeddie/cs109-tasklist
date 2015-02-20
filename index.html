@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<!-- Bootstrap minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<style>
+		.list-group-item-warning {
+			color: #F08900;
+			background-color: #FFE7C8;
+		}
+	</style>
+
+	<!-- JQuery JavaScript -->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- Bootstrap minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+	<script src="tasklist.js"></script>
+	
+</head>
+
+<body>
+	
+	<div style="color:#FFF; background-color:#FF5F5F; margin: 20px 0 20px 0; padding: 0 0 10px 0;">
+		<div class="container">
+			<h1 class="text-center">Task List</h1>
+		</div>
+	</div>	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2">
+			</div>
+			<div class="col-lg-8">
+				<ul class="list-group">
+					
+				</ul>
+				<div class="panel panel-default center-block" style="margin:0 20px 0 20px;">
+				  	<div class="panel-body">
+		  				<div>
+						    <input type="text" class="form-control new-task-name" placeholder="Task Name">	
+					  	</div>
+					  	<div class="row">
+						    <div class="col-lg-1 center-block" style="width: 200px; padding-top:10px">
+						  			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						  				<span class="priority-label">Priority</span>
+						  				<span class="caret"></span>
+						  			</button>
+								  	<ul class="dropdown-menu" role="menu">
+									    <li><a class="priority-option">High</a></li>
+									    <li><a class="priority-option">Medium</a></li>
+									    <li><a class="priority-option">Low</a></li>
+								  	</ul>
+								<button type="button" class="btn btn-default add-button">Add</button>	
+						    </div>
+						</div>	
+						<div class="alert alert-danger alert-dismissible fade in" role="alert" style="margin:10px 0 0 0; display: none;">
+							<h4>Error</h4>
+							<p>Please enter a task name and priority.</p>
+					    </div>
+			  		</div>
+				</div>
+			</div>
+			<div class="col-lg-2">
+			</div>
+			
+		</div>
+	</div>
+	
+
+</body>
+
+</html>
